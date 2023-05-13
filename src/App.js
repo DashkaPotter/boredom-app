@@ -1,4 +1,4 @@
-//import { useCallback } from 'react';
+import { useCallback } from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import './App.css';
@@ -6,17 +6,18 @@ import './App.css';
 function App() {
   const [idea, setIdea] = useState('');
 
-  const getIdea = 
+  const getIdea = useCallback(
     async() => {
       const response = await fetch ('http://www.boredapi.com/api/activity/ ')
       const data = await response.json();
 
       setIdea(data.activity)
-    }
+    },[]
+    )
   
   useEffect(()=> {
     getIdea()
-  },[])
+  },[getIdea])
 
   return (
     
