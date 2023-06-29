@@ -1,19 +1,19 @@
 .container{
-  background:rgba(255, 255, 255, 0.852);
+  background:rgba(255, 255, 255, 0.913);
   padding: 2rem;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
-  margin-top: 10rem;
+  margin-top: 5rem;
   text-align: center;
-  width: 900px;
-  height: 60vh;
+  width: 700px;
+  height: 65vh;
   
 }
 body {
   display: flex;
     justify-content: center;
     height: 100vh;
-    background-image: url("https://images.pexels.com/photos/12552098/pexels-photo-12552098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); 
+    background-image: url("bridge.jpeg"); 
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -27,19 +27,40 @@ font-weight: 500;
 
 }
 h1{
-  font-size: 3.5rem;
+  font-size: 3rem;
     color: #f548d5;
-    text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+    text-shadow: 0 13.36px 8.896px #c7c5c0,0 -2px 1px #fff;
 }
 .button{
-  margin-top: 4rem;
+  margin-top: 3.5rem;
   font-size: 2.6rem;
   width: 60%;
-  padding: 37px 50px;
-  background-color: #f548d5;
+  padding: 20px 50px;
+  background: linear-gradient(-90deg,#f548d5,#fe98ec);
   border: none;
   color: white;
-
+  text-transform: uppercase;
 }
 
-
+@media all and (max-width:800px){
+  .container{
+    width: 400px;
+    height: 60px;
+  }
+}
+@media all and (max-width:500px){
+  h1{
+    font-size: 2rem;
+  }
+  .container{
+    width: 400px;
+    height: 55vh;
+  }
+  .button{
+    margin-top: 4rem;
+    font-size: 1.3rem;
+    width: 50%;
+    padding: 20px 50px;
+    text-transform: lowercase;
+  }
+}
