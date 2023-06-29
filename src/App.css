@@ -6,7 +6,7 @@
   margin-top: 5rem;
   text-align: center;
   width: 700px;
-  height: 65vh;
+  height: 75vh;
   
 }
 body {
@@ -45,7 +45,7 @@ h1{
 @media all and (max-width:800px){
   .container{
     width: 400px;
-    height: 70px;
+    height: 70vhx;
   }
 }
 @media all and (max-width:500px){
